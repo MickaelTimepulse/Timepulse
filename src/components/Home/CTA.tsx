@@ -3,8 +3,19 @@ import { Calendar, ArrowRight } from 'lucide-react';
 
 export default function CTA() {
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <section className="relative py-20 overflow-hidden">
+      {/* Background image with 50% opacity - Mountain landscape */}
+      <div
+        className="absolute inset-0 opacity-50 bg-cover bg-center"
+        style={{
+          backgroundImage: 'url(https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=1920)',
+        }}
+      ></div>
+
+      {/* White overlay for softening */}
+      <div className="absolute inset-0 bg-white/40"></div>
+
+      <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <Calendar className="w-16 h-16 text-pink-600 mx-auto mb-6" />
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
           Vous organisez un événement sportif ?
