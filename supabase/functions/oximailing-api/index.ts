@@ -15,8 +15,8 @@ Deno.serve(async (req: Request) => {
   }
 
   try {
-    const apiUser = Deno.env.get("OXIMAILING_API_USER");
-    const apiPassword = Deno.env.get("OXIMAILING_API_PASSWORD");
+    const apiUser = Deno.env.get("a63qP9qqjqMT1uyys7AG");
+    const apiPassword = Deno.env.get("gobSSIqUtWY6BeNjEmC8");
 
     if (!apiUser || !apiPassword) {
       throw new Error("OxiMailing API credentials not configured");
